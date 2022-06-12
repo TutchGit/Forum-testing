@@ -261,6 +261,13 @@ ul {
     font-size: 1.5em;
 }
 
+.fixed-top {
+    position: fixed;
+    width: calc(100% - 150px); /*must do because fixed position cancel padding, so i have to reduce with by 75x2 (each side) so i have a smooth transition) */
+    top: 0;
+    left: 0;
+}
+
 @media screen and (min-width: 427px) and (max-width: 1024px) {
     #menu_user_list {
         flex-wrap: wrap;
