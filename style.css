@@ -249,6 +249,7 @@ ul {
 
 #credit {
     background-color: #202730;
+    height: 100px;
     margin-top: 15px;
     padding: 25px;
     display: flex;
