@@ -195,6 +195,11 @@ ul {
     height: 50px;
 }
 
+.sub_category_message_number p {
+    text-align: center;
+    margin: 8px auto 0 auto;
+}
+
 .sub_category_topic_number {
     display: flex;
     justify-content: center;
@@ -206,7 +211,7 @@ ul {
 
 .sub_category_text {
     text-align: center;
-    margin: auto 5px;
+    margin: 15px 5px;
 }
 
 .sub_category_last_post {
@@ -255,4 +260,68 @@ ul {
 #tutch {
     margin: 0;
     font-size: 1.5em;
+}
+
+@media screen and (min-width: 427px) and (max-width: 1024px) {
+    #menu_user_list {
+        flex-wrap: wrap;
+        line-height: 25px;
+    }
+
+    #onglets_category_rp {
+        height: 150px;
+        flex-wrap: wrap;
+    }
+
+    .list_category {
+        padding: 0 15px;
+    }
+
+    .category_rp {
+        margin: 0 25px;
+    }
+
+    #subs_category_rp {
+        flex-direction: column;
+        height: 900px;
+        align-content: center;
+    }
+
+    .sub_category_rp {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #menu_user_list {
+        flex-direction: column;
+    }
+
+    .list_category {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    #onglets_category_rp {
+        flex-direction: column;
+    }
+
+    #onglets_category_rp li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #subs_category_rp {
+        display: block;
+        height: auto;
+    }
+
+    .sub_category_rp {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .sub_category_image {
+        display: none;
+    }
 }
