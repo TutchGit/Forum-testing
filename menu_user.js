@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function() {
     const menu_user = document.getElementById("menu_user");
     if (window. screen.width > 768) {
-        if (window.scrollY > 330) {
+        if (window.scrollY > 400) {
             menu_user.classList.add("fixed-top");
         } else {
             menu_user.classList.remove("fixed-top");
