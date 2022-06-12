@@ -271,7 +271,14 @@ ul {
 @media screen and (min-width: 427px) and (max-width: 1024px) {
     #menu_user_list {
         flex-wrap: wrap;
+        justify-content: center;
         line-height: 25px;
+    }
+
+    .list_category {
+        text-align: center;
+        padding-top: 5px;
+        margin: 0 10px;
     }
 
     #onglets_category_rp {
@@ -300,12 +307,15 @@ ul {
 
 @media screen and (max-width: 426px) {
     #menu_user_list {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 0;
     }
 
     .list_category {
         text-align: center;
-        margin-top: 5px;
+        padding-top: 5px;
+        margin: 0 10px;
     }
 
     #onglets_category_rp {

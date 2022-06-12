@@ -15,9 +15,22 @@ console.log("hello")
 window.addEventListener('scroll', function() {
     console.log("launch")
     const menu_user = document.getElementById("menu_user");
-    if (window.scrollY > 300) {
-        menu_user.classList.add("fixed-top");
+    if (window. screen.width > 768) {
+        if (window.scrollY > 300) {
+            menu_user.classList.add("fixed-top");
+        } else {
+            menu_user.classList.remove("fixed-top");
+        }
+    } else if (window. screen.width > 425) {
+        if (window.scrollY > 160) {
+            menu_user.classList.add("fixed-top");
+        } else {
+            menu_user.classList.remove("fixed-top");
+        }
     } else {
-        menu_user.classList.remove("fixed-top");
-    }
-})
+        if (window.scrollY > 88) {
+            menu_user.classList.add("fixed-top");
+        } else {
+            menu_user.classList.remove("fixed-top");
+        }
+}});
